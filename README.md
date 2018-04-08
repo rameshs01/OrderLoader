@@ -30,3 +30,6 @@ Deployment details
    input and output file path should be local your DFS path whic your cluster connected to.
    
 Note: the process creates output directory an given output path. so the output dir should not have created before otherwise process will fail. it is intentional not to delete output path from a process.
+
+
+To read the code, start from the "com.myassignment.orderloader.OrderParser" which is the main class.
