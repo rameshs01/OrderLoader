@@ -31,5 +31,7 @@ Deployment details
    
 Note: the process creates output directory an given output path. so the output dir should not have created before otherwise process will fail. it is intentional not to delete output path from a process.
 
+In local mode, the spark will be launched single java process and it reads the file from the local file system and writes again to the local file system. In cluster mode, it submits to the cluster and spark process will be running on worker nodes. inputs and outputs read from HDFS/AWS/AzuerBlob that cluster connected to. Based on the input size of the data and resource availability in the cluster, the cluster resources configured.
+
 
 To read the code, start from the "com.myassignment.orderloader.OrderParser" which is the main class.
